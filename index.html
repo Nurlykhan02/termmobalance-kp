@@ -17,8 +17,8 @@
     />
     <base href="/termmobalance-kp/" />
     <script src="assets/js/theme.js"></script>
-    <script src="assets/js/process-lab.js" defer></script>
-    <link rel="stylesheet" crossorigin href="/termmobalance-kp/assets/index-Db_uEWBQ.css">
+    <script src="assets/js/scroll-sections.js" defer></script>
+    <link rel="stylesheet" crossorigin href="/termmobalance-kp/assets/index-BdPn-M5c.css">
   </head>
   <body>
     <button class="theme-toggle" id="themeToggle" title="Тема" aria-label="Переключить тему">☾</button>
@@ -144,191 +144,163 @@
       </div>
     </section>
 
-    <section class="process-lab" id="processLab">
-      <div class="lab-grain" aria-hidden="true"></div>
-      <div class="lab-glow" aria-hidden="true"></div>
-      <div class="lab-inner wrap">
-        <div class="lab-top">
-          <span class="lab-eyebrow">Пример блока на сайте</span>
-          <p class="lab-kicker">Как показать производство</p>
-          <h2 class="lab-title">ИЗ ТКАНИ<br><span>В БРЕНД</span></h2>
-          <p class="lab-lead">
-            Идея такая: клиент листает этапы — ткань, пошив, бренд, готовое изделие.
-            На каждом шаге своё видео. Ниже показано, как это будет выглядеть. Ролики
-            стоковые, на боевом сайте поставим ваши.
-          </p>
-          <p class="lab-hint-text">Наведите на этап справа — видео сменится</p>
-        </div>
-
-        <div class="lab-grid">
-          <div class="lab-preview">
-            <div class="lab-preview-head">
-              <div class="lab-preview-badge">Как будет на сайте</div>
-              <div class="lab-demo-tag" aria-hidden="true">ДЕМО</div>
-            </div>
-            <div class="lab-preview-frame">
-              <div class="lab-video-stack">
-                <video
-                  class="lab-preview-video is-visible"
-                  src="assets/videos/process/01-fabric.mp4"
-                  muted
-                  loop
-                  playsinline
-                  preload="auto"
-                  aria-hidden="true"
-                ></video>
-                <video
-                  class="lab-preview-video"
-                  muted
-                  loop
-                  playsinline
-                  preload="none"
-                  aria-hidden="true"
-                ></video>
-              </div>
-              <div class="lab-preview-vignette" aria-hidden="true"></div>
-              <div class="lab-preview-scan" aria-hidden="true"></div>
-              <div class="lab-stage-counter" aria-live="polite">
-                <span class="lab-stage-now">01</span>
-                <span class="lab-stage-sep">/</span>
-                <span class="lab-stage-total">04</span>
-              </div>
-            </div>
-            <p class="lab-preview-caption">Выбор ткани, модели и тиража</p>
-            <p class="lab-preview-note">
-              Видео для примера. При запуске заменим на съёмку с вашего цеха.
-            </p>
-            <div class="lab-progress" aria-hidden="true"><span class="lab-progress-fill"></span></div>
+    <section class="scroll-story process-story" id="processLab" data-stage-count="4">
+      <div class="scroll-story-track">
+        <div class="scroll-story-pin">
+          <div class="scroll-story-media" aria-hidden="true">
+            <video class="scroll-story-video is-visible" src="assets/videos/process/01-fabric.mp4" muted loop playsinline preload="auto"></video>
+            <video class="scroll-story-video" src="assets/videos/process/02-sewing.mp4" muted loop playsinline preload="auto"></video>
+            <video class="scroll-story-video" src="assets/videos/process/03-branding.mp4" muted loop playsinline preload="auto"></video>
+            <video class="scroll-story-video" src="assets/videos/process/04-finished.mp4" muted loop playsinline preload="auto"></video>
+            <div class="scroll-story-scrim"></div>
           </div>
 
-          <ol class="lab-stages">
-            <li
-              class="lab-stage is-active"
-              data-video="assets/videos/process/01-fabric.mp4"
-              data-caption="Выбор ткани, модели и тиража"
-              data-hint="1 из 4"
-              tabindex="0"
-              role="button"
-              aria-selected="true"
-            >
-              <span class="lab-num">01</span>
-              <div>
-                <h3>Ткань и заказ</h3>
-                <p>Материал, модель, количество. Рядом — форма заявки.</p>
-              </div>
-            </li>
-            <li
-              class="lab-stage"
-              data-video="assets/videos/process/02-sewing.mp4"
-              data-caption="Раскрой и пошив — видео с линии"
-              data-hint="2 из 4"
-              tabindex="0"
-              role="button"
-              aria-selected="false"
-            >
-              <span class="lab-num">02</span>
-              <div>
-                <h3>Раскрой и пошив</h3>
-                <p>Короткое видео с цеха — видно, как шьют.</p>
-              </div>
-            </li>
-            <li
-              class="lab-stage"
-              data-video="assets/videos/process/03-branding.mp4"
-              data-caption="Логотип и цвет на изделии"
-              data-hint="3 из 4"
-              tabindex="0"
-              role="button"
-              aria-selected="false"
-            >
-              <span class="lab-num">03</span>
-              <div>
-                <h3>Брендирование</h3>
-                <p>Нанесение лого — через конструктор на сайте.</p>
-              </div>
-            </li>
-            <li
-              class="lab-stage"
-              data-video="assets/videos/process/04-finished.mp4"
-              data-caption="Готовая партия, кнопка повторного заказа"
-              data-hint="4 из 4"
-              tabindex="0"
-              role="button"
-              aria-selected="false"
-            >
-              <span class="lab-num">04</span>
-              <div>
-                <h3>Готовая продукция</h3>
-                <p>Готовая спецодежда с вашим брендом.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
+          <div class="scroll-story-ui wrap">
+            <div class="scroll-story-head">
+              <span class="scroll-story-tag">Пример блока · демо</span>
+              <h2 class="scroll-story-title">ИЗ ТКАНИ <span>В БРЕНД</span></h2>
+              <p class="scroll-story-hint">Прокрутите — этапы и видео сменятся сами</p>
+            </div>
 
+            <div class="scroll-story-panels">
+              <article class="scroll-panel is-active" data-video="assets/videos/process/01-fabric.mp4" data-index="0">
+                <span class="scroll-panel-num">01</span>
+                <h3>Ткань и заказ</h3>
+                <p>Клиент выбирает материал, модель и тираж. На фоне — видео со склада или каталога тканей.</p>
+                <ul class="scroll-panel-list">
+                  <li>Форма заявки рядом с выбором</li>
+                  <li>Сроки и ориентир по цене</li>
+                </ul>
+              </article>
+              <article class="scroll-panel" data-video="assets/videos/process/02-sewing.mp4" data-index="1">
+                <span class="scroll-panel-num">02</span>
+                <h3>Раскрой и пошив</h3>
+                <p>Показываем цех: как ткань превращается в изделие. Клиент видит производство, а не только картинку.</p>
+                <ul class="scroll-panel-list">
+                  <li>Видео с линии пошива</li>
+                  <li>Контроль качества на каждом этапе</li>
+                </ul>
+              </article>
+              <article class="scroll-panel" data-video="assets/videos/process/03-branding.mp4" data-index="2">
+                <span class="scroll-panel-num">03</span>
+                <h3>Брендирование</h3>
+                <p>Логотип и цвет на изделии — через конструктор на сайте или по готовому макету.</p>
+                <ul class="scroll-panel-list">
+                  <li>Сублимация, вышивка, печать</li>
+                  <li>Примерка бренда онлайн</li>
+                </ul>
+              </article>
+              <article class="scroll-panel" data-video="assets/videos/process/04-finished.mp4" data-index="3">
+                <span class="scroll-panel-num">04</span>
+                <h3>Готовая продукция</h3>
+                <p>Финальный результат — партия спецодежды с вашим брендом. Кнопка «Повторить заказ».</p>
+                <ul class="scroll-panel-list">
+                  <li>Фото и видео готовой партии</li>
+                  <li>Заявка в один клик</li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="scroll-story-footer">
+              <div class="scroll-story-dots" aria-hidden="true">
+                <span class="scroll-dot is-active"></span>
+                <span class="scroll-dot"></span>
+                <span class="scroll-dot"></span>
+                <span class="scroll-dot"></span>
+              </div>
+              <p class="scroll-story-note scroll-story-note--alert" role="note">
+                <span class="alert-icon" aria-hidden="true">!</span>
+                <span><strong>Видео для примера.</strong> На вашем сайте — съёмка с цеха Termmo Balance.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-story-after wrap">
         <div class="lab-stats">
           <div><span class="lab-stat-n">2008</span><span class="lab-stat-d">год на рынке</span></div>
           <div><span class="lab-stat-n">5</span><span class="lab-stat-d">направлений в одном сайте</span></div>
           <div><span class="lab-stat-n">30с</span><span class="lab-stat-d">примерка в конструкторе</span></div>
         </div>
-        <p class="lab-credit">
-          Это макет блока. Контент — ваши фото и видео с производства.
-        </p>
       </div>
     </section>
 
-    <section class="block" id="constructor">
-      <div class="wrap">
-        <div class="blockhead">
-          <span class="lbl">Конструктор</span>
-          <h2>Конструктор на сайте</h2>
-          <p>Клиент загружает лого, меняет цвет, видит результат и оставляет заявку. Входит в базовый пакет.</p>
-        </div>
+    <section class="scroll-story constructor-story" id="constructorScroll" data-stage-count="3">
+      <div class="scroll-story-track">
+        <div class="scroll-story-pin scroll-story-pin--constructor">
+          <div class="constructor-layout wrap">
+            <div class="constructor-copy">
+              <div class="scroll-story-head">
+                <span class="scroll-story-tag">Конструктор · в базовом пакете</span>
+                <h2 class="scroll-story-title">ПРИМЕРКА <span>БРЕНДА</span></h2>
+                <p class="scroll-story-hint">Прокрутите — сравнение «до / после» сдвинется само</p>
+              </div>
 
-        <div class="constructor-demo">
-          <div class="demo-step">
-            <span class="demo-tag">Шаг 1 · Исходное фото</span>
-            <div class="demo-frame">
-              <img src="assets/images/constructor-before.jpeg" alt="Исходное фото модели" loading="lazy" />
-            </div>
-            <div class="demo-chips">
-              <span class="chip">Цвет: серый</span>
-              <span class="chip">Лого: KADZAKI</span>
-            </div>
-          </div>
+              <div class="scroll-story-panels">
+                <article class="scroll-panel is-active" data-index="0">
+                  <span class="scroll-panel-num">01</span>
+                  <h3>Исходное фото</h3>
+                  <p>Серая модель с чужим лого — стартовая точка. Клиент видит посадку изделия.</p>
+                  <div class="scroll-chips">
+                    <span class="scroll-chip">Цвет: серый</span>
+                    <span class="scroll-chip">Лого: KADZAKI</span>
+                  </div>
+                </article>
+                <article class="scroll-panel" data-index="1">
+                  <span class="scroll-panel-num">02</span>
+                  <h3>Меняем цвет и лого</h3>
+                  <p>Клиент подгружает свой бренд и выбирает цвет — изменения видны на модели сразу.</p>
+                  <div class="scroll-chips">
+                    <span class="scroll-chip scroll-chip--active">Цвет: чёрный</span>
+                    <span class="scroll-chip scroll-chip--active">Лого: ваш бренд</span>
+                  </div>
+                </article>
+                <article class="scroll-panel" data-index="2">
+                  <span class="scroll-panel-num">03</span>
+                  <h3>Готово — оставить заявку</h3>
+                  <p>Результат за ~30 секунд. После лимита AI-попыток открывается форма заявки.</p>
+                  <div class="scroll-chips">
+                    <span class="scroll-chip scroll-chip--active">Цвет: чёрный</span>
+                    <span class="scroll-chip scroll-chip--active">Лого: ваш бренд</span>
+                    <span class="scroll-chip scroll-chip--cta">Оставить заявку →</span>
+                  </div>
+                </article>
+              </div>
 
-          <div class="demo-arrow" aria-hidden="true">
-            <span class="demo-arrow-icon">→</span>
-            <span class="demo-arrow-text">цвет + лого</span>
-          </div>
-
-          <div class="demo-step demo-step-result">
-            <span class="demo-tag">Шаг 2 · Результат</span>
-            <div class="demo-frame">
-              <img src="assets/images/constructor-after.png?v=2" alt="Результат: футболка с логотипом клиента" loading="lazy" />
+              <div class="scroll-story-footer">
+                <div class="scroll-story-dots" aria-hidden="true">
+                  <span class="scroll-dot is-active"></span>
+                  <span class="scroll-dot"></span>
+                  <span class="scroll-dot"></span>
+                </div>
+                <div class="constructor-mini-stats">
+                  <span>30 сек · примерка</span>
+                  <span>3–5 · AI-попыток</span>
+                  <span>0 ₸ · доплата</span>
+                </div>
+              </div>
             </div>
-            <div class="demo-chips">
-              <span class="chip chip-active">Цвет: чёрный</span>
-              <span class="chip chip-active">Лого: ваш бренд</span>
-            </div>
-          </div>
-        </div>
 
-        <div class="stats" style="margin-top: 24px">
-          <div class="stat">
-            <div class="n">30 сек</div>
-            <div class="d">среднее время примерки</div>
-          </div>
-          <div class="stat">
-            <div class="n">3–5</div>
-            <div class="d">бесплатных AI-попыток</div>
-          </div>
-          <div class="stat">
-            <div class="n">1</div>
-            <div class="d">форма → лид после лимита</div>
-          </div>
-          <div class="stat">
-            <div class="n">0 ₸</div>
-            <div class="d">доплата за конструктор</div>
+            <div class="constructor-compare-col">
+              <div class="constructor-compare-frame">
+                <img
+                  class="constructor-compare-img constructor-compare-before"
+                  src="assets/images/constructor-before.jpeg"
+                  alt="До: серая футболка"
+                />
+                <div class="constructor-compare-reveal">
+                  <img
+                    class="constructor-compare-img constructor-compare-after"
+                    src="assets/images/constructor-after.png?v=2"
+                    alt="После: чёрная футболка с вашим лого"
+                  />
+                </div>
+                <div class="constructor-compare-line" aria-hidden="true"></div>
+                <span class="constructor-badge constructor-badge--before">До</span>
+                <span class="constructor-badge constructor-badge--after">После</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
