@@ -210,6 +210,69 @@ p.sub { color: var(--muted); max-width: 780px; margin-bottom: 26px; }
 
 .stat .d { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
 
+.value-section {
+  background: linear-gradient(180deg, var(--wash) 0%, var(--paper) 100%);
+  border-bottom: 1px solid var(--line);
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+@media (max-width: 980px) {
+  .value-grid { grid-template-columns: 1fr; }
+}
+
+.value-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.value-card.featured {
+  border-color: var(--brand);
+  background: linear-gradient(145deg, var(--card) 0%, var(--soft) 180%);
+}
+
+.value-num {
+  display: inline-block;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--brand);
+  margin-bottom: 10px;
+}
+
+.value-card h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+  line-height: 1.25;
+}
+
+.value-card p {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+
+.value-banner {
+  max-width: 100%;
+  border-left-width: 6px;
+}
+
+.cols.roles .col.role-me {
+  border-color: var(--brand);
+  border-width: 2px;
+}
+
+.cols.roles .col.role-me h3 { color: var(--brand); }
+
 .callout {
   background: var(--card);
   border: 1px solid var(--line);
