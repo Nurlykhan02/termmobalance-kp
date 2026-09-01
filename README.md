@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Откройте http://localhost:5173
+Откройте http://localhost:5173/termmobalance-kp/
 
 ## Сборка
 
