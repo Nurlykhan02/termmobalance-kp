@@ -58,6 +58,7 @@
     function syncCompareImageWidth() {
       if (!compareFrame || !compareAfter) return;
       compareAfter.style.width = compareFrame.offsetWidth + 'px';
+      compareAfter.style.height = compareFrame.offsetHeight + 'px';
     }
 
     function setConstructorMix(mix) {
