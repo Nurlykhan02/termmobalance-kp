@@ -32,5 +32,5 @@ npm run build
 ├── index.html          # коммерческое предложение
 └── assets/
     ├── css/kp.css      # дизайн в стиле azamat.ai
-    └── js/theme.js     # тёмная тема
+    └── public/assets/js/theme.js  # тёмная тема (копируется в dist)
 ```
