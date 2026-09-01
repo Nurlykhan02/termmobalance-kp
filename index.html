@@ -15,8 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/css/kp.css" />
-    <script src="/assets/js/theme.js"></script>
+    <base href="/termmobalance-kp/" />
+    <link rel="stylesheet" href="assets/css/kp.css" />
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/process-lab.js" defer></script>
   </head>
   <body>
     <button class="theme-toggle" id="themeToggle" title="Тема" aria-label="Переключить тему">☾</button>
@@ -25,57 +27,351 @@
       <div class="wrap">
         <span class="brandline"><strong>Коммерческое предложение</strong> для Termmo Balance</span>
         <span class="kicker">Разработка сайта · сентябрь 2026</span>
-        <h1>Сайт под ключ — <span class="accent">дизайн, разработка, маркетинг, запуск</span></h1>
+
+        <p class="hero-pain-label">Что бросается в глаза при разборе:</p>
+        <ul class="hero-pains" aria-label="Проблемы текущих сайтов">
+          <li class="hero-pain">Дизайн старый</li>
+          <li class="hero-pain">Услуги вперемешку</li>
+          <li class="hero-pain">Нет видео с цеха</li>
+          <li class="hero-pain">Заявку не сразу найти</li>
+          <li class="hero-pain">Два сайта — путаница</li>
+          <li class="hero-pain">Конкуренты подаются лучше</li>
+        </ul>
+
+        <h1>Сайт, который <span class="accent">продаёт услуги и собирает заявки</span></h1>
         <p class="lead">
-          Соберу всё в одном месте: красивая подача услуг, видео, формы, конструктор одежды.
-          Веду проект сам — от вас материалы по запросу: видео, фото, тексты с текущих сайтов.
+          Сейчас на сайтах всё слабое — от дизайна до функций: клиент не понимает услуги,
+          не видит производство, не может быстро оставить заявку. Соберу один сильный сайт:
+          современный визуал, конструктор, видео, формы, маркетинговые идеи.
         </p>
         <div class="meta">
-          <span>Разработка: <b>3–4 недели</b></span>
+          <span>Запуск: <b>3–4 недели</b></span>
           <span>Договор: <b>2 месяца</b></span>
-          <span>Стоимость: <b>от 500 000 ₸</b></span>
+          <span>Конструктор: <b>включён</b></span>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat hero-stat--pain"><span class="num">×2</span><span class="lbl-s">сайта вместо одного</span></div>
+          <div class="hero-stat hero-stat--pain"><span class="num">50+</span><span class="lbl-s">позиций без группировки</span></div>
+          <div class="hero-stat hero-stat--pain"><span class="num">0</span><span class="lbl-s">видео с производства</span></div>
+          <div class="hero-stat hero-stat--pain"><span class="num">?</span><span class="lbl-s">где оставить заявку</span></div>
         </div>
       </div>
     </header>
 
-    <section class="block value-section" id="value">
+    <section class="impact-strip" aria-label="Ключевая мысль">
+      <div class="wrap">
+        <p class="impact-text">
+          Завод с <strong>2008</strong> года · <strong>5</strong> направлений · клиенты по всему Казахстану.
+          <span>Сайт должен это показывать с первого экрана — а не прятать в меню.</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="block alt" id="pain">
+      <div class="wrap">
+        <div class="blockhead">
+          <span class="lbl">Проблема</span>
+          <h2>Что мешает сейчас</h2>
+          <p>Кратко — по пунктам, без воды.</p>
+        </div>
+        <div class="cols">
+          <div class="col no">
+            <h3>Сейчас</h3>
+            <ul>
+              <li>Дизайн устарел, выглядит как сайт 10-летней давности</li>
+              <li>Больше 50 услуг — всё в одной куче, сложно найти нужное</li>
+              <li>Нет видео с цеха, нет конструктора, заявка не на виду</li>
+              <li>Два сайта в разном стиле — непонятно, куда заходить</li>
+              <li>Часть трафика уходит, потому что неудобно</li>
+            </ul>
+          </div>
+          <div class="col role-me">
+            <h3>После запуска</h3>
+            <ul>
+              <li>Новый дизайн под Termmo Balance</li>
+              <li>5 групп услуг — за минуту понятно, чем занимаетесь</li>
+              <li>Конструктор: клиент накидывает лого и цвет за полминуты</li>
+              <li>Видео, формы, Telegram — заявка в пару кликов</li>
+              <li>Метрика покажет, откуда приходят люди</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="audit">
+      <div class="wrap">
+        <div class="blockhead">
+          <span class="lbl">Разбор</span>
+          <h2>Я уже смотрел ваши сайты</h2>
+          <p>termmokz и sayahatservice — вот что видит человек, когда ищет спецодежду или утеплитель.</p>
+        </div>
+        <div class="audit-grid">
+          <article class="audit-card audit-card--bad">
+            <span class="audit-tag">termmokz</span>
+            <h3>Сейчас</h3>
+            <ul>
+              <li>Дизайн старый, не цепляет</li>
+              <li>Меню перегружено — сложно найти нужное</li>
+              <li>Нет видео с цеха, нет конструктора</li>
+              <li>Заявка не бросается в глаза</li>
+            </ul>
+          </article>
+          <article class="audit-card audit-card--bad">
+            <span class="audit-tag">sayahatservice</span>
+            <h3>Сейчас</h3>
+            <ul>
+              <li>Другой стиль — непонятно, что это одна компания</li>
+              <li>Те же услуги, но подача другая</li>
+              <li>Клиент путается, куда заходить</li>
+              <li>Тоже нет инструментов для заказа</li>
+            </ul>
+          </article>
+          <article class="audit-card audit-card--good">
+            <span class="audit-tag">Новый сайт</span>
+            <h3>Будет</h3>
+            <ul>
+              <li>Один стиль, одна точка входа</li>
+              <li>5 разделов — сразу понятно, куда кликнуть</li>
+              <li>Видео, конструктор, формы на виду</li>
+              <li>Заявка в пару кликов + Telegram</li>
+            </ul>
+          </article>
+        </div>
+        <p class="audit-foot">
+          На старте — полный разбор конкурентов в нише: что у них заходит, что возьмём, где сделаем сильнее.
+        </p>
+      </div>
+    </section>
+
+    <section class="process-lab" id="processLab">
+      <div class="lab-grain" aria-hidden="true"></div>
+      <div class="lab-glow" aria-hidden="true"></div>
+      <div class="lab-inner wrap">
+        <div class="lab-top">
+          <span class="lab-eyebrow">Пример блока на сайте</span>
+          <p class="lab-kicker">Как показать производство</p>
+          <h2 class="lab-title">ИЗ ТКАНИ<br><span>В БРЕНД</span></h2>
+          <p class="lab-lead">
+            Идея такая: клиент листает этапы — ткань, пошив, бренд, готовое изделие.
+            На каждом шаге своё видео. Ниже показано, как это будет выглядеть. Ролики
+            стоковые, на боевом сайте поставим ваши.
+          </p>
+          <p class="lab-hint-text">Наведите на этап справа — видео сменится</p>
+        </div>
+
+        <div class="lab-grid">
+          <div class="lab-preview">
+            <div class="lab-preview-head">
+              <div class="lab-preview-badge">Как будет на сайте</div>
+              <div class="lab-demo-tag" aria-hidden="true">ДЕМО</div>
+            </div>
+            <div class="lab-preview-frame">
+              <div class="lab-video-stack">
+                <video
+                  class="lab-preview-video is-visible"
+                  src="assets/videos/process/01-fabric.mp4"
+                  muted
+                  loop
+                  playsinline
+                  preload="auto"
+                  aria-hidden="true"
+                ></video>
+                <video
+                  class="lab-preview-video"
+                  muted
+                  loop
+                  playsinline
+                  preload="none"
+                  aria-hidden="true"
+                ></video>
+              </div>
+              <div class="lab-preview-vignette" aria-hidden="true"></div>
+              <div class="lab-preview-scan" aria-hidden="true"></div>
+              <div class="lab-stage-counter" aria-live="polite">
+                <span class="lab-stage-now">01</span>
+                <span class="lab-stage-sep">/</span>
+                <span class="lab-stage-total">04</span>
+              </div>
+            </div>
+            <p class="lab-preview-caption">Выбор ткани, модели и тиража</p>
+            <p class="lab-preview-note">
+              Видео для примера. При запуске заменим на съёмку с вашего цеха.
+            </p>
+            <div class="lab-progress" aria-hidden="true"><span class="lab-progress-fill"></span></div>
+          </div>
+
+          <ol class="lab-stages">
+            <li
+              class="lab-stage is-active"
+              data-video="assets/videos/process/01-fabric.mp4"
+              data-caption="Выбор ткани, модели и тиража"
+              data-hint="1 из 4"
+              tabindex="0"
+              role="button"
+              aria-selected="true"
+            >
+              <span class="lab-num">01</span>
+              <div>
+                <h3>Ткань и заказ</h3>
+                <p>Материал, модель, количество. Рядом — форма заявки.</p>
+              </div>
+            </li>
+            <li
+              class="lab-stage"
+              data-video="assets/videos/process/02-sewing.mp4"
+              data-caption="Раскрой и пошив — видео с линии"
+              data-hint="2 из 4"
+              tabindex="0"
+              role="button"
+              aria-selected="false"
+            >
+              <span class="lab-num">02</span>
+              <div>
+                <h3>Раскрой и пошив</h3>
+                <p>Короткое видео с цеха — видно, как шьют.</p>
+              </div>
+            </li>
+            <li
+              class="lab-stage"
+              data-video="assets/videos/process/03-branding.mp4"
+              data-caption="Логотип и цвет на изделии"
+              data-hint="3 из 4"
+              tabindex="0"
+              role="button"
+              aria-selected="false"
+            >
+              <span class="lab-num">03</span>
+              <div>
+                <h3>Брендирование</h3>
+                <p>Нанесение лого — через конструктор на сайте.</p>
+              </div>
+            </li>
+            <li
+              class="lab-stage"
+              data-video="assets/videos/process/04-finished.mp4"
+              data-caption="Готовая партия, кнопка повторного заказа"
+              data-hint="4 из 4"
+              tabindex="0"
+              role="button"
+              aria-selected="false"
+            >
+              <span class="lab-num">04</span>
+              <div>
+                <h3>Готовая продукция</h3>
+                <p>Готовая спецодежда с вашим брендом.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="lab-stats">
+          <div><span class="lab-stat-n">2008</span><span class="lab-stat-d">год на рынке</span></div>
+          <div><span class="lab-stat-n">5</span><span class="lab-stat-d">направлений в одном сайте</span></div>
+          <div><span class="lab-stat-n">30с</span><span class="lab-stat-d">примерка в конструкторе</span></div>
+        </div>
+        <p class="lab-credit">
+          Это макет блока. Контент — ваши фото и видео с производства.
+        </p>
+      </div>
+    </section>
+
+    <section class="block" id="constructor">
+      <div class="wrap">
+        <div class="blockhead">
+          <span class="lbl">Конструктор</span>
+          <h2>Конструктор на сайте</h2>
+          <p>Клиент загружает лого, меняет цвет, видит результат и оставляет заявку. Входит в базовый пакет.</p>
+        </div>
+
+        <div class="constructor-demo">
+          <div class="demo-step">
+            <span class="demo-tag">Шаг 1 · Исходное фото</span>
+            <div class="demo-frame">
+              <img src="assets/images/constructor-before.jpeg" alt="Исходное фото модели" loading="lazy" />
+            </div>
+            <div class="demo-chips">
+              <span class="chip">Цвет: серый</span>
+              <span class="chip">Лого: KADZAKI</span>
+            </div>
+          </div>
+
+          <div class="demo-arrow" aria-hidden="true">
+            <span class="demo-arrow-icon">→</span>
+            <span class="demo-arrow-text">цвет + лого</span>
+          </div>
+
+          <div class="demo-step demo-step-result">
+            <span class="demo-tag">Шаг 2 · Результат</span>
+            <div class="demo-frame">
+              <img src="assets/images/constructor-after.png?v=2" alt="Результат: футболка с логотипом клиента" loading="lazy" />
+            </div>
+            <div class="demo-chips">
+              <span class="chip chip-active">Цвет: чёрный</span>
+              <span class="chip chip-active">Лого: ваш бренд</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats" style="margin-top: 24px">
+          <div class="stat">
+            <div class="n">30 сек</div>
+            <div class="d">среднее время примерки</div>
+          </div>
+          <div class="stat">
+            <div class="n">3–5</div>
+            <div class="d">бесплатных AI-попыток</div>
+          </div>
+          <div class="stat">
+            <div class="n">1</div>
+            <div class="d">форма → лид после лимита</div>
+          </div>
+          <div class="stat">
+            <div class="n">0 ₸</div>
+            <div class="d">доплата за конструктор</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block value-section alt" id="value">
       <div class="wrap">
         <div class="blockhead">
           <span class="lbl">Суть</span>
-          <h2>Что вы получаете</h2>
-          <p>Готовый инструмент продаж — с дизайном, разработкой и идеями для рекламы.</p>
+          <h2>Что входит в работу</h2>
+          <p>От макета до запуска на вашем сервере.</p>
         </div>
 
         <div class="value-grid">
           <div class="value-card featured">
             <span class="value-num">01</span>
-            <h3>Авторский дизайн</h3>
-            <p>Визуал под Termmo Balance — сразу понятно, кто вы и чем сильны.</p>
+            <h3>Дизайн</h3>
+            <p>Свой визуал под Termmo Balance.</p>
           </div>
           <div class="value-card featured">
             <span class="value-num">02</span>
-            <h3>Реализация под ключ</h3>
-            <p>Структура, сайт, формы, Telegram, конструктор, метрики, деплой на ваш сервер.</p>
+            <h3>Разработка под ключ</h3>
+            <p>Сайт, формы, Telegram, конструктор, аналитика, деплой.</p>
           </div>
           <div class="value-card">
             <span class="value-num">03</span>
             <h3>Маркетинг</h3>
-            <p>Идеи для рекламы, посадочные, точки конверсии — чтобы шли заявки.</p>
+            <p>Идеи для рекламы и посадочных — по ходу проекта.</p>
           </div>
           <div class="value-card">
             <span class="value-num">04</span>
-            <h3>Best practices</h3>
-            <p>Скорость, мобильная версия, аналитика, SEO-база, React + Python.</p>
+            <h3>Аналитика</h3>
+            <p>Метрика и GA — откуда приходят заявки.</p>
           </div>
           <div class="value-card">
             <span class="value-num">05</span>
             <h3>Конструктор</h3>
-            <p>Клиент примеряет цвет и логотип — и оставляет контакты.</p>
+            <p>Примерка лого и цвета прямо на сайте.</p>
           </div>
           <div class="value-card">
             <span class="value-num">06</span>
-            <h3>Запуск за 2 месяца</h3>
-            <p>Разработка, правки, передача проекта и обучение.</p>
+            <h3>2 месяца по договору</h3>
+            <p>Разработка, правки, передача, покажу как пользоваться.</p>
           </div>
         </div>
 
@@ -83,8 +379,8 @@
           <div class="col role-you">
             <h3>От вас</h3>
             <ul>
-              <li>Видео и фото — по запросу</li>
-              <li>Тексты и факты с текущих сайтов</li>
+              <li>Фото и видео — если есть, возьмём; если нет — подскажу что снять</li>
+              <li>Тексты с текущих сайтов</li>
               <li>Согласование макетов</li>
               <li>Доступ к серверу в офисе</li>
             </ul>
@@ -92,39 +388,12 @@
           <div class="col role-me">
             <h3>От меня</h3>
             <ul>
+              <li>Анализ конкурентов — что у них сильное, возьмём и улучшим</li>
               <li>Дизайн, разработка, конструктор</li>
               <li>Формы, метрики, деплой</li>
-              <li>Идеи для рекламы и посадочные</li>
-              <li>Запуск и передача проекта</li>
+              <li>Идеи для рекламы</li>
+              <li>Запуск и передача</li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="block alt" id="problem">
-      <div class="wrap">
-        <div class="blockhead">
-          <span class="lbl">Задача</span>
-          <h2>Один сайт — все услуги понятно</h2>
-          <p>Утеплители, спецодежда, стёжка, постельное, сублимация — в логичных группах. Клиент за минуту понимает предложение и оставляет заявку.</p>
-        </div>
-        <div class="stats">
-          <div class="stat">
-            <div class="n">1</div>
-            <div class="d">сайт вместо двух</div>
-          </div>
-          <div class="stat">
-            <div class="n">5</div>
-            <div class="d">групп услуг</div>
-          </div>
-          <div class="stat">
-            <div class="n">▶</div>
-            <div class="d">видео в разделах</div>
-          </div>
-          <div class="stat">
-            <div class="n">✦</div>
-            <div class="d">конструктор одежды</div>
           </div>
         </div>
       </div>
@@ -133,20 +402,20 @@
     <section class="block" id="concept">
       <div class="wrap">
         <div class="blockhead">
-          <span class="lbl">Логика</span>
-          <h2>Зашёл → понял → оставил заявку</h2>
-          <p>Короткие блоки, видео, форма рядом — без лишних кликов.</p>
+          <span class="lbl">Услуги</span>
+          <h2>5 направлений — каждое со своей страницей</h2>
+          <p>Утеплители, спецодежда, стёжка, постельное, печать. Плюс формы заявок.</p>
         </div>
         <div class="weeks two">
           <div class="week">
             <span class="w">Утеплители</span>
             <h4>Teksulate, UniFiber</h4>
-            <p>Видео, тезисы, кнопка «Получить КП».</p>
+            <p>Короткое видео, тезисы, кнопка «Получить КП».</p>
           </div>
           <div class="week">
             <span class="w">Спецодежда</span>
             <h4>Пошив и форма</h4>
-            <p>Куртки, комбинезоны, жилеты — карточками.</p>
+            <p>Куртки, комбинезоны, жилеты.</p>
           </div>
           <div class="week">
             <span class="w">Стёжка</span>
@@ -169,10 +438,6 @@
             <p>Формы и Telegram на ключевых точках.</p>
           </div>
         </div>
-        <p class="sub" style="margin-top: 20px">
-          Видео — от вас, встраиваю в нужные разделы. Структуру согласуем на старте.
-          В пакете «Стандарт» — до 3 посадочных под рекламу (текст, видео, форма).
-        </p>
       </div>
     </section>
 
@@ -180,99 +445,44 @@
       <div class="wrap">
         <div class="blockhead">
           <span class="lbl">Маркетинг</span>
-          <h2>Идеи для рекламы — по ходу проекта</h2>
-          <p>Посадочные появляются, когда маркетологу нужен отдельный оффер. До 3 штук в пакете «Стандарт».</p>
+          <h2>Идеи для рекламы</h2>
+          <p>В пакете «Стандарт» — до 3 посадочных под отдельные офферы.</p>
         </div>
         <div class="callout">
           <span class="tagline">Пример</span>
           <h3>«Сопровождение брендов»</h3>
           <p>
-            Обсуждали с Векасом: Termmo Balance как партнёр для запуска текстильного бренда.
-            Производство, минимальные объёмы, форма заявки — <b>пример</b> посадочной под рекламу.
+            Отдельная посадочная: Termmo Balance как производитель для тех, кто запускает
+            свой текстильный бренд. Минимальные тиражи, форма заявки.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="block" id="constructor">
-      <div class="wrap">
-        <div class="blockhead">
-          <span class="lbl">Конструктор</span>
-          <h2>Примерить одежду под свой бренд</h2>
-          <p>Входит в базовый пакет. Клиент меняет цвет, накладывает логотип — и оставляет заявку.</p>
-        </div>
-        <div class="cols">
-          <div class="col">
-            <h3>AI-версия</h3>
-            <ul>
-              <li>NanoBanana — реалистичная генерация</li>
-              <li>Лимит бесплатных попыток → форма заявки</li>
-              <li>Сильный крючок на лиды</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h3>Простая версия</h3>
-            <ul>
-              <li>Логотип и цвет на шаблонах</li>
-              <li>Без лимитов, быстрый старт</li>
-              <li>Те же триггеры: «сохранить», «получить расчёт»</li>
-            </ul>
-          </div>
-        </div>
-        <p class="sub" style="margin-top: 20px"><b>Вариант выберем на созвоне.</b></p>
-      </div>
-    </section>
-
-    <section class="block alt" id="metrics">
+    <section class="block" id="metrics">
       <div class="wrap">
         <div class="blockhead">
           <span class="lbl">Аналитика</span>
-          <h2>Видно, что работает</h2>
-          <p>Яндекс.Метрика + Google Analytics: заявки, разделы, конструктор, источники трафика.</p>
+          <h2>Аналитика</h2>
+          <p>Чтобы понимать, какие разделы приносят заявки.</p>
         </div>
         <div class="stats">
           <div class="stat">
-            <div class="n">Формы</div>
-            <div class="d">каждая заявка с привязкой к разделу</div>
+            <div class="n">8+</div>
+            <div class="d">целей в Метрике и GA</div>
           </div>
           <div class="stat">
-            <div class="n">Конструктор</div>
-            <div class="d">сколько «примерили» дизайн</div>
+            <div class="n">100%</div>
+            <div class="d">заявок с привязкой к разделу</div>
           </div>
           <div class="stat">
-            <div class="n">Трафик</div>
-            <div class="d">поиск, реклама, прямые заходы</div>
+            <div class="n">3–4</div>
+            <div class="d">недели до запуска</div>
           </div>
           <div class="stat">
-            <div class="n">Цели</div>
-            <div class="d">настрою под ваши задачи</div>
+            <div class="n">170+</div>
+            <div class="d">часов работы в базе</div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="block" id="tech">
-      <div class="wrap">
-        <div class="blockhead">
-          <span class="lbl">Стек</span>
-          <h2>React + Python на вашем сервере</h2>
-          <p>Быстро, надёжно, данные остаются у вас в офисе.</p>
-        </div>
-        <div class="tabwrap">
-          <table class="tab">
-            <thead>
-              <tr>
-                <th>Слой</th>
-                <th>Технология</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td><b>Интерфейс</b></td><td>React, адаптив</td></tr>
-              <tr><td><b>Бэкенд</b></td><td>Python — формы, API конструктора</td></tr>
-              <tr><td><b>Сервер</b></td><td>Nginx, SSL, ваш офис</td></tr>
-              <tr><td><b>Аналитика</b></td><td>Метрика, Google Analytics</td></tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </section>
@@ -281,85 +491,34 @@
       <div class="wrap">
         <div class="blockhead">
           <span class="lbl">Подход</span>
-          <h2>Веду проект целиком</h2>
-          <p>Дизайн, разработка, маркетинговые идеи, запуск — в одних руках.</p>
+          <h2>Как буду делать</h2>
+          <p>Сначала разберу конкурентов, потом — структура, дизайн и запуск.</p>
         </div>
         <div class="weeks two">
           <div class="week">
-            <span class="w">Структура</span>
-            <h4>Группировка услуг</h4>
-            <p>Что вынести наверх, где видео, где форма.</p>
+            <span class="w">Старт</span>
+            <h4>Анализ конкурентов</h4>
+            <p>Посмотрю сайты в нише: что у них цепляет, что работает на заявки. Сильное — возьмём, добавим своё и сделаем лучше.</p>
           </div>
           <div class="week">
-            <span class="w">Конверсия</span>
-            <h4>Точки заявок</h4>
-            <p>Формы и Telegram в нужных местах.</p>
+            <span class="w">Структура</span>
+            <h4>Группировка услуг</h4>
+            <p>Что выносим наверх, где ставим видео и формы.</p>
+          </div>
+          <div class="week">
+            <span class="w">Заявки</span>
+            <h4>Формы и Telegram</h4>
+            <p>В нужных местах, не спрятаны в подвале.</p>
           </div>
           <div class="week">
             <span class="w">SEO</span>
-            <h4>Базовая видимость</h4>
-            <p>Структура, скорость, заголовки.</p>
+            <h4>Базовая оптимизация</h4>
+            <p>Структура, скорость, заголовки — в пакете «Стандарт».</p>
           </div>
           <div class="week">
-            <span class="w">Запуск</span>
+            <span class="w">Сдача</span>
             <h4>2 месяца</h4>
-            <p>Разработка, метрики, правки, передача.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="block" id="contract">
-      <div class="wrap">
-        <div class="blockhead">
-          <span class="lbl">Договор</span>
-          <h2>2 месяца — от старта до передачи</h2>
-        </div>
-        <div class="cols">
-          <div class="col">
-            <h3>Включено</h3>
-            <ul>
-              <li>Разработка и запуск (3–4 недели)</li>
-              <li>1 раунд изменений (базовый)</li>
-              <li>Метрики, формы, сервер</li>
-              <li>Обучение и документация</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h3>После договора</h3>
-            <ul>
-              <li>Исходники и доступы — у вас</li>
-              <li>Сайт работает автономно</li>
-              <li>Поддержка — по желанию, отдельно</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="block alt" id="features">
-      <div class="wrap">
-        <div class="blockhead">
-          <span class="lbl">Состав</span>
-          <h2>Что входит в стоимость</h2>
-        </div>
-        <div class="cols">
-          <div class="col">
-            <h3>В проекте</h3>
-            <ul>
-              <li>Авторский дизайн и полная разработка</li>
-              <li>Конструктор, формы, Telegram, метрики</li>
-              <li>Маркетинговые идеи и сопровождение</li>
-              <li>Деплой на ваш сервер, 2 месяца</li>
-            </ul>
-          </div>
-          <div class="col no">
-            <h3>От вас / дополнительно</h3>
-            <ul>
-              <li>Видео и фото по запросу</li>
-              <li>До 3 посадочных — пакет «Стандарт»</li>
-              <li>Копирайтинг, реклама, многоязычность</li>
-            </ul>
+            <p>Разработка, настройка, передача вам.</p>
           </div>
         </div>
       </div>
@@ -380,6 +539,7 @@
               </tr>
             </thead>
             <tbody>
+              <tr><td><b>Анализ конкурентов</b></td><td class="r tnum">3–5 дней</td></tr>
               <tr><td><b>Структура и дизайн</b></td><td class="r tnum">~2 нед</td></tr>
               <tr><td><b>Разработка</b></td><td class="r tnum">~2 нед</td></tr>
               <tr><td><b>Запуск и тест</b></td><td class="r tnum">2–3 дня</td></tr>
@@ -391,12 +551,82 @@
       </div>
     </section>
 
+    <section class="block alt" id="tech">
+      <div class="wrap">
+        <div class="blockhead">
+          <span class="lbl">Стек</span>
+          <h2>React + Python на вашем сервере</h2>
+          <p>Данные и заявки остаются у вас в офисе.</p>
+        </div>
+        <div class="tabwrap">
+          <table class="tab">
+            <thead>
+              <tr>
+                <th>Слой</th>
+                <th>Технология</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><b>Интерфейс</b></td><td>React, адаптив</td></tr>
+              <tr><td><b>Бэкенд</b></td><td>Python — формы, API конструктора</td></tr>
+              <tr><td><b>Сервер</b></td><td>Nginx, SSL, ваш офис</td></tr>
+              <tr><td><b>Аналитика</b></td><td>Метрика, Google Analytics</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="block alt" id="roi">
+      <div class="wrap">
+        <div class="blockhead">
+          <span class="lbl">Окупаемость</span>
+          <h2>Сайт — не расход, а витрина завода</h2>
+          <p>Один крупный заказ на спецодежду или утеплитель перекрывает стоимость разработки. Сейчас часть этих заказов уходит мимо — потому что на сайте неудобно.</p>
+        </div>
+        <div class="roi-grid">
+          <div class="roi-card">
+            <span class="roi-num">500 000 ₸</span>
+            <span class="roi-lbl">базовый пакет</span>
+            <p>Сайт, конструктор, формы, аналитика, анализ конкурентов</p>
+          </div>
+          <div class="roi-card roi-card--mid">
+            <span class="roi-arrow">→</span>
+            <p class="roi-mid-text">Один B2B-заказ на партию — и вложение отбивается</p>
+          </div>
+          <div class="roi-card">
+            <span class="roi-num">24/7</span>
+            <span class="roi-lbl">работает на вас</span>
+            <p>Пока менеджер спит — сайт принимает заявки и показывает производство</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="deliverables">
+      <div class="wrap">
+        <div class="blockhead">
+          <span class="lbl">Результат</span>
+          <h2>Что отдаю на руки</h2>
+          <p>Не «сдал и пропал» — полный комплект, с которым можно работать дальше.</p>
+        </div>
+        <div class="deliver-grid">
+          <div class="deliver-item"><span class="deliver-check">✓</span><div><b>Готовый сайт</b><p>На вашем сервере в офисе, с SSL</p></div></div>
+          <div class="deliver-item"><span class="deliver-check">✓</span><div><b>Конструктор</b><p>Примерка лого и цвета на изделии</p></div></div>
+          <div class="deliver-item"><span class="deliver-check">✓</span><div><b>Формы и Telegram</b><p>Заявки приходят сразу, с пометкой откуда пришли</p></div></div>
+          <div class="deliver-item"><span class="deliver-check">✓</span><div><b>Аналитика</b><p>Метрика и GA — видно, что приносит клиентов</p></div></div>
+          <div class="deliver-item"><span class="deliver-check">✓</span><div><b>Исходный код</b><p>Всё ваше, не на чужом конструкторе</p></div></div>
+          <div class="deliver-item"><span class="deliver-check">✓</span><div><b>Инструкция</b><p>Покажу, как менять тексты и смотреть заявки</p></div></div>
+        </div>
+      </div>
+    </section>
+
     <section class="block alt" id="price">
       <div class="wrap">
         <div class="blockhead">
           <span class="lbl">Стоимость</span>
           <h2>Пакеты</h2>
-          <p>Аванс 30%, остаток после сдачи.</p>
+          <p>Аванс 30%, остаток после сдачи проекта.</p>
         </div>
         <div class="tabwrap">
           <table class="tab">
@@ -410,7 +640,7 @@
             <tbody>
               <tr>
                 <td><b>Базовый</b></td>
-                <td>Сайт, конструктор, формы, метрики, 1 раунд правок, деплой, 2 месяца</td>
+                <td>Сайт, конструктор, формы, метрики, анализ конкурентов, 1 раунд правок, деплой, 2 месяца</td>
                 <td class="r tnum">500 000 ₸</td>
               </tr>
               <tr>
@@ -422,21 +652,21 @@
           </table>
         </div>
         <p class="tab-note">
-          Аванс: 150 000 ₸ / 300 000 ₸. Размещение — на вашем сервере в офисе.
+          Аванс: <b>150 000 ₸</b> (базовый) · <b>300 000 ₸</b> (стандарт). Размещение на вашем сервере.
         </p>
       </div>
     </section>
 
-    <section class="block" id="next">
+    <section class="block alt" id="next">
       <div class="wrap">
         <div class="blockhead">
           <span class="lbl">Дальше</span>
-          <h2>Обсудим детали</h2>
-          <p>Созвонимся, выберем конструктор, зафиксируем в договоре.</p>
+          <h2>Если интересно — напишите</h2>
+          <p>Обсудим детали, выберем пакет, зафиксируем в договоре.</p>
         </div>
         <div class="callout">
           <span class="tagline">Контакт</span>
-          <h3>Свяжитесь удобным способом</h3>
+          <h3>Telegram или почта</h3>
           <p>
             Telegram: <b><a href="https://t.me/bberikovichh">@bberikovichh</a></b> ·
             Почта: <b><a href="mailto:nurlykhantaubuzar@gmail.com">nurlykhantaubuzar@gmail.com</a></b>
